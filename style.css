@@ -36,14 +36,14 @@ input::placeholder{
     font-weight: 500;
 }
 .buttons {
-    height: 58vh;
+    min-height: 58vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 button {
-    font-size: 2vw;
+    font-size: 2rem;
     border: none;
     background-color: #403f3f;
     opacity: 0.80;
@@ -148,7 +148,7 @@ button:hover {
         height: 51vh;
     }
     .operator {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
