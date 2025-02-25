@@ -10,6 +10,8 @@ body{
     min-height: 700px;
     gap: 2rem;
     background-color: #b4f7e1;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 nav{
@@ -78,7 +80,7 @@ button{
 .equal{
     background-color: #0ccaeb;
 }
-@media screen and (max-width: 370px) {
+/* @media screen and (max-width: 370px) {
     button{
         height: 3.7rem;
         width: 3.7rem;
@@ -129,7 +131,6 @@ button{
     }
     main{
         width: 20rem;
-        margin-top: 2rem;
     }
     button{
         height: 3.8rem;
@@ -154,7 +155,6 @@ button{
     }
     main{
         width: 20rem;
-        margin-top: 2rem;
     }
     button{
         height: 3.8rem;
@@ -176,7 +176,6 @@ button{
     }
     main{
         width: 27rem;
-        margin-top: 3rem;
     }
     .allclear-button, .delete-button{
         font-size: 1.3rem;
@@ -184,5 +183,89 @@ button{
     body{
         justify-content: start;
         align-items: center;
+    }
+} */
+
+/* Default styles are already set in your CSS */
+
+/* Small devices (phones, 600px and below) */
+@media only screen and (max-width: 400px) {
+    body{
+        justify-content: start;
+        align-items: center;
+        background-color: #2f2d2d;
+    }
+    main {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    h1{
+        color: #fff;
+    }
+    input {
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+    button {
+        height: 3.5rem;
+        width: 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        justify-content: start;
+        align-items: center;
+        background-color: #2f2d2d;
+    }
+    main {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    h1{
+        color: #fff;
+    }
+    input {
+        height: 5rem;
+        font-size: 1.5rem;
+    }
+    button {
+        height: 4rem;
+        width: 4rem;
+        font-size: 1.2rem;
+    }
+}
+/* Medium devices (tablets, 600px to 1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    body{
+        justify-content: start;
+        align-items: center;
+        gap: 0;
+
+    }
+    main {
+        width: auto;
+    }
+    input {
+        height: 6rem;
+        font-size: 1.8rem;
+    }
+    button {
+        height: 4rem;
+        width: 4rem;
+        font-size: 1.4rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    main {
+        width: auto;
+    }
+    body{
+        gap: 4rem;
     }
 }
