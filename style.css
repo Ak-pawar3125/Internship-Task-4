@@ -7,7 +7,8 @@ html,
 body {
     background-color: #222222;
     overflow-x: hidden;
-    overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
 nav {
@@ -23,6 +24,9 @@ input {
     width: 100%;
     text-align: right;
     font-size: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     background-color: #222222;
     border: none;
     color: #fff;
@@ -36,7 +40,7 @@ input::placeholder{
     font-weight: 500;
 }
 .buttons {
-    min-height: 58vh;
+    height: 69vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -71,140 +75,116 @@ button:hover {
 .equal:hover {
     background-color: #6fc1ea;
 }
-/* ---------- Extra Small Devices (max-width: 400px) ------- */
-@media screen and (max-width: 400px) {
-    nav {
-        height: 2.5rem;
-    }
-    input {
-        height: 5rem;
-        font-size: 2.5rem;
-    }
-    .buttons{
-        height: 51vh;
-    }
-    button {
-        font-size: 1.3rem;
-    }
-    .operator {
-        font-size: 1rem;
-    }
-}
 
-/* ---------- Small Devices (401px - 600px) ------- */
-@media screen and (max-width: 600px) {
+/* ----------media queries for mobile------- */
+@media screen and (max-width: 480px) {
     nav {
-        height: 2.5rem;
+        height: 2.4rem;
     }
+
     input {
-        height: 6rem;
+        height: 9rem;
         font-size: 3rem;
     }
 
     button {
         font-size: 1.5rem;
     }
-    .buttons{
-        height: 51vh;
-    }
-    .operator {
-        font-size: 1rem;
+    .operator{
+        font-size: 2rem;
     }
 }
 
-/* ---------- Medium Devices (601px - 895px) ------- */
-@media screen and (max-width: 895px) {
+/* ----------media queries for tablet------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
     nav {
         height: 3rem;
     }
-    input {
-        height: 9rem;
-        font-size: 3.5rem;
-    }
-    button {
-        font-size: 1.7rem;
-    }
-    .buttons{
-        height:51vh;
-    }
-    .operator {
-        font-size: 1.3rem;
-    }
-}
 
-/* ---------- Tablets (896px - 1020px) ------- */
-@media screen and (max-width: 1020px) {
-    nav {
-        height: 3.5rem;
-    }
     input {
-        height: 10rem;
+        height: 12rem;
         font-size: 4rem;
     }
+
     button {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .buttons{
-        height: 51vh;
+        height: 59.5vh;
     }
-    .operator {
-        font-size: 1.5rem;
+    .operator{
+        font-size: 2.5rem;
     }
 }
 
-/* ---------- Small Laptops (1021px - 1150px) ------- */
-@media screen and (max-width: 1150px) {
+/* ----------media queries for laptop------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        height: 2.4rem;
+    }
+
+    input {
+        height: 9rem;
+    }
+    button{
+        font-size: 1.8rem;
+    }
+    .operator{
+        font-size: 2rem;
+    }
+}
+/* ----------media queries for laptop L------- */
+@media screen and (min-width: 1025px) and (max-width: 1439px){
     nav {
         height: 4rem;
     }
-    input {
-        height: 10rem;
-        font-size: 4.5rem;
-    }
-    button {
-        font-size: 2rem;
-    }
-    .buttons{
-        height: 51vh;
-    }
-}
 
-/* ---------- Standard Laptops (1151px - 1440px) ------- */
-@media screen and (max-width: 1440px) {
-    nav {
-        height: 5rem;
-    }
-    input {
-        height: 13rem;
-    }
-    button {
-        font-size: 2rem;
-    }
-    .buttons{
-        height: 65.80vh;
-    }
-}
-
-/* ---------- 4K Screens (1441px and up) ------- */
-@media screen and (min-width: 1441px) {
-    nav {
-        height: 5rem;
-    }
-    h1 {
-        font-size: 2rem;
-        padding-top: 1rem;
-    }
     input {
         height: 12rem;
-        font-size: 5rem;
     }
-    button {
-        font-size: 2rem;
+
+    .buttons{
+        height: 57vh;
+    }
+
+    button{
+        font-size: 2.5rem;
+    }
+}
+/* ----------media queries for laptop L------- */
+@media screen and (min-width: 1440px) and (max-width: 2560px){
+    nav {
+        height: 4rem;
+    }
+
+    input {
+        height: 15rem;
+    }
+
+    .buttons{
+        height: 64vh;
+    }
+
+    button{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 2560px) {
+    nav{
+        height: 10rem;
+    }
+    h1{
+        font-size: 5rem;
+        padding-top: 2rem;
+    }
+    input {
+        height: 15rem;
+        font-size: 10rem;
     }
     .buttons{
-        height: 62.50vh;
+        height: 68rem;
     }
-    .operator {
-        font-size: 3rem;
+    button{
+        font-size: 4rem;
     }
 }
