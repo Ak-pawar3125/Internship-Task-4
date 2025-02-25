@@ -152,7 +152,7 @@ button:hover {
     }
 }
 /* ----------media queries for laptop L------- */
-@media screen and (min-width: 1440px) and (max-width: 2560px){
+@media screen and (min-width: 1440px) and (max-width: 1500px){
     nav {
         height: 4rem;
     }
