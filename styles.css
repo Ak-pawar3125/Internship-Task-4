@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #b4f7e1;
+}
+nav{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+h1{
+    font-size: 2rem;
+    color: #513005;
+}
+main{
+    width: 25%;
+    height: auto;
+    background-color: #2f2d2d;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 15px #000000cc; /* Dark shadow */
+}
+
+.buttons{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 1rem;
+}
+
+input{
+    height: 7rem;
+    width: 90%;
+    font-size: 2rem;
+    border: none;
+    appearance: none;
+    outline: none;
+    text-align: end;
+    padding-right: 2rem;
+    background-color: #2f2d2d;
+    color: #fff;
+    border-radius: 2rem;
+}
+input::placeholder{
+    color: #fff;
+}
+
+button{
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #434141;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+}
+
+.func-button{
+    background-color: #ebab0c;
+    color: #513005;
+}
+.operator{
+    font-size: 2rem;
+}
+.equal{
+    background-color: #0ccaeb;
+}
+@media screen and (max-width: 370px) {
+    button{
+        height: 3.7rem;
+        width: 3.7rem;
+    }
+    .allclear-button, .delete-button{
+        font-size: 1.3rem;
+    }
+    h1{
+        padding-top: 2rem;
+    }
+    input{
+        margin-top: 4rem;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    main{
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    nav{
+        height: 2rem;
+    }
+    body{
+        background-color: #2f2d2d;
+    }
+    h1{
+        color: #fff;
+        padding-top: 2rem;
+    }
+    input{
+        height: 4rem;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    nav{
+        height: 2rem;
+    }
+    h1{
+        padding-top: 2rem;
+    }
+    main{
+        width: 20rem;
+    }
+    button{
+        height: 3.8rem;
+        width: 3.8rem;
+    }
+    .allclear-button, .delete-button{
+        font-size: 1.3rem;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    nav{
+        height: 2rem;
+    }
+    h1{
+        padding-top: 2rem;
+    }
+    main{
+        width: 20rem;
+    }
+    button{
+        height: 3.8rem;
+        width: 3.8rem;
+    }
+    .allclear-button, .delete-button{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    h1{
+        padding-top: 2rem;
+    }
+    main{
+        width: 27rem;
+    }
+    .allclear-button, .delete-button{
+        font-size: 1.3rem;
+    }
+}
