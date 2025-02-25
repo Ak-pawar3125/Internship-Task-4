@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 700px;
     gap: 2rem;
     background-color: #b4f7e1;
 }
+
 nav{
     height: 4rem;
     display: flex;
@@ -85,8 +86,9 @@ button{
     .allclear-button, .delete-button{
         font-size: 1.3rem;
     }
-    h1{
-        padding-top: 2rem;
+    body{
+        justify-content: start;
+        align-items: start;
     }
     main{
         margin-top: 2rem;
@@ -98,7 +100,6 @@ button{
         height: auto;
         width: 100%;
         border-radius: 0;
-        margin-top: 2rem;
         box-shadow: none;
     }
     nav{
@@ -114,6 +115,10 @@ button{
     input{
         height: 4rem;
     }
+    body{
+        justify-content: start;
+        align-items: start;
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
     nav{
@@ -124,7 +129,6 @@ button{
     }
     main{
         width: 20rem;
-        margin-top: 2rem;
     }
     button{
         height: 3.8rem;
@@ -132,6 +136,10 @@ button{
     }
     .allclear-button, .delete-button{
         font-size: 1.3rem;
+    }
+    body{
+        justify-content: start;
+        align-items: center;
     }
     
 }
@@ -144,7 +152,6 @@ button{
         padding-top: 2rem;
     }
     main{
-        margin-top: 4rem;
         width: 20rem;
     }
     button{
@@ -153,6 +160,10 @@ button{
     }
     .allclear-button, .delete-button{
         font-size: 1.3rem;
+    }
+    body{
+        justify-content: start;
+        align-items: center;
     }
 }
 
@@ -163,9 +174,13 @@ button{
     }
     main{
         width: 27rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
     .allclear-button, .delete-button{
         font-size: 1.3rem;
+    }
+    body{
+        justify-content: start;
+        align-items: center;
     }
 }
