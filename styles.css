@@ -86,6 +86,7 @@ button{
         justify-content: start;
         align-items: center;
         background-color: #2f2d2d;
+        gap: 2rem;
     }
     main {
         width: 100%;
@@ -111,6 +112,7 @@ button{
         justify-content: start;
         align-items: center;
         background-color: #2f2d2d;
+        gap: 2rem;
     }
     main {
         width: 100%;
