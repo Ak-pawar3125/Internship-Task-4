@@ -144,7 +144,7 @@ button{
         padding-top: 2rem;
     }
     main{
-        margin-top: 2rem;
+        margin-top: 4rem;
         width: 20rem;
     }
     button{
@@ -163,7 +163,7 @@ button{
     }
     main{
         width: 27rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
     .allclear-button, .delete-button{
         font-size: 1.3rem;
