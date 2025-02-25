@@ -75,19 +75,38 @@ button:hover {
 .equal:hover {
     background-color: #6fc1ea;
 }
-
-/* ----------media queries for mobile------- */
-@media screen and (max-width: 480px) {
+/* ----------media queries for short mobile------- */
+@media screen and (min-width: 320px) and (max-width: 424px) {
     nav {
         height: 2.4rem;
     }
 
     input {
-        height: 15rem;
+        height: 13rem;
         font-size: 3rem;
     }
     .buttons{
-        height: 67vh;
+        height: 58vh;
+    }
+    button {
+        font-size: 1.5rem;
+    }
+    .operator{
+        font-size: 2rem;
+    }
+}
+/* ----------media queries for mobile------- */
+@media screen and (min-width: 425px) and (max-width: 480px) {
+    nav {
+        height: 2.4rem;
+    }
+
+    input {
+        height: 13rem;
+        font-size: 3rem;
+    }
+    .buttons{
+        height: 58vh;
     }
     button {
         font-size: 1.5rem;
@@ -104,7 +123,7 @@ button:hover {
     }
 
     input {
-        height: 15rem;
+        height: 12rem;
         font-size: 4rem;
     }
 
@@ -112,7 +131,7 @@ button:hover {
         font-size: 1.5rem;
     }
     .buttons{
-        height: 66vh;
+        height: 59vh;
     }
     .operator{
         font-size: 2.5rem;
@@ -126,13 +145,13 @@ button:hover {
     }
 
     input {
-        height: 15rem;
+        height: 12.5rem;
     }
     button{
         font-size: 1.8rem;
     }
     .buttons{
-        height: 67vh;
+        height: 59.5vh;
     }
     .operator{
         font-size: 2rem;
@@ -149,11 +168,14 @@ button:hover {
     }
 
     .buttons{
-        height: 69.5vh;
+        height: 56.5vh;
     }
 
     button{
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .operator{
+        font-size: 2rem;
     }
 }
 /* ----------media queries for laptop L------- */
