@@ -2,7 +2,7 @@ let input = document.querySelector("input");
 let buttons = document.querySelectorAll("button");
 
 let result = "";
-let evaluated = false; // To track if '=' was pressed
+let evaluated = false;
 
 let arr = Array.from(buttons);
 
@@ -12,10 +12,10 @@ arr.forEach(button => {
 
         if (buttonText === "=") {
             try {
-                result = result.replace(/%\*/g, "/100*"); // Convert `%*` to `/100*`
+                result = result.replace(/%\*/g, "/100*");
                 result = eval(result);
                 input.value = result;
-                evaluated = true; // Mark that '=' was pressed
+                evaluated = true;
             } catch (error) {
                 input.value = "Error";
                 result = "";
@@ -30,13 +30,22 @@ arr.forEach(button => {
         } else if (buttonText === "%") {
             result += "%";
             input.value = result;
+        } else if (buttonText === "+/-") {
+
+            if (result.length > 0) {
+                if (result.startsWith("-")) {
+                    result = result.substring(1);
+                } else {
+                    result = "-" + result;
+                }
+                input.value = result;
+            }
         } else {
             if (evaluated) {
-                // If last button was '=', replace result only if a number is pressed
                 if (!isNaN(buttonText)) {
                     result = buttonText;
                 } else {
-                    result += buttonText; // Append operator to previous result
+                    result += buttonText;
                 }
                 evaluated = false;
             } else {
