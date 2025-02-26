@@ -38,7 +38,6 @@ input::placeholder{
     font-weight: 500;
 }
 .buttons {
-    height: 69vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -52,6 +51,7 @@ button {
     color: #fff;
     border: 1px solid #000000;
     border-radius: 0.2rem;
+    padding: 1.3rem;
 }
 
 button:hover {
@@ -74,7 +74,7 @@ button:hover {
     background-color: #6fc1ea;
 }
 /* ----------media queries for short mobile------- */
-@media screen and (min-width: 320px) and (max-width: 424px) {
+@media screen and (max-width: 424px) {
     nav {
         height: 2.4rem;
     }
@@ -83,11 +83,9 @@ button:hover {
         height: 13rem;
         font-size: 3rem;
     }
-    .buttons{
-        height: 57vh;
-    }
     button {
         font-size: 1.5rem;
+        padding: 0.95rem;
     }
     .operator{
         font-size: 2rem;
@@ -107,11 +105,9 @@ button:hover {
         height: 13rem;
         font-size: 3rem;
     }
-    .buttons{
-        height: 57vh;
-    }
     button {
         font-size: 1.5rem;
+        padding: 0.95rem;
     }
     .operator{
         font-size: 2rem;
@@ -135,9 +131,7 @@ button:hover {
 
     button {
         font-size: 1.5rem;
-    }
-    .buttons{
-        height: 56vh;
+        padding: 0.55rem;
     }
     .operator{
         font-size: 2.5rem;
@@ -155,9 +149,7 @@ button:hover {
     }
     button{
         font-size: 1.8rem;
-    }
-    .buttons{
-        height: 59vh;
+        padding: 1rem;
     }
     .operator{
         font-size: 2rem;
@@ -173,12 +165,10 @@ button:hover {
         height: 12rem;
     }
 
-    .buttons{
-        height: 56vh;
-    }
 
     button{
         font-size: 2rem;
+        padding: 0.88rem;
     }
     .operator{
         font-size: 2rem;
@@ -194,12 +184,9 @@ button:hover {
         height: 13rem;
     }
 
-    .buttons{
-        height: 62.5vh;
-    }
-
     button{
         font-size: 2.5rem;
+        padding: 0.85rem;
     }
 }
 @media screen and (min-width: 2560px) {
@@ -211,13 +198,14 @@ button:hover {
         padding-top: 2rem;
     }
     input {
-        height: 15rem;
+        height: 22rem;
         font-size: 10rem;
-    }
-    .buttons{
-        height: 68rem;
     }
     button{
         font-size: 4rem;
+        padding: 2.4rem;
+    }
+    .operator{
+        font-size: 5rem;
     }
 }
