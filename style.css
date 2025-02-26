@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222222;
+}
+
+nav {
+    height: 4rem;
+    width: 100%;
+}
+
+h1{
+    color: #fff;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+input {
+    height: 10rem;
+    width: 100%;
+    text-align: right;
+    font-size: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #222222;
+    border: none;
+    color: #fff;
+    outline: none;
+}
+input::placeholder{
+    color: #fff;
+}
+.operator{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.buttons {
+    height: 69vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    font-size: 2rem;
+    border: none;
+    background-color: #403f3f;
+    opacity: 0.80;
+    color: #fff;
+    border: 1px solid #000000;
+    border-radius: 0.2rem;
+}
+
+button:hover {
+    background-color: #515151;
+}
+
+.func-button {
+    background-color: #515151;
+}
+
+.func-button:hover {
+    background-color: #403f3f;
+}
+
+.equal {
+    background-color: #4ca8d6;
+}
+
+.equal:hover {
+    background-color: #6fc1ea;
+}
+/* ----------media queries for short mobile------- */
+@media screen and (min-width: 320px) and (max-width: 424px) {
+    nav {
+        height: 2.4rem;
+    }
+
+    input {
+        height: 13rem;
+        font-size: 3rem;
+    }
+    .buttons{
+        height: 66vh;
+    }
+    button {
+        font-size: 1.5rem;
+    }
+    .operator{
+        font-size: 2rem;
+    }
+    h1{
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+}
+/* ----------media queries for mobile------- */
+@media screen and (min-width: 425px) and (max-width: 480px) {
+    nav {
+        height: 2.4rem;
+    }
+
+    input {
+        height: 13rem;
+        font-size: 3rem;
+    }
+    .buttons{
+        height: 66vh;
+    }
+    button {
+        font-size: 1.5rem;
+    }
+    .operator{
+        font-size: 2rem;
+    }
+    h1{
+        padding-top: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* ----------media queries for tablet------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        height: 3rem;
+    }
+
+    input {
+        height: 12rem;
+        font-size: 4rem;
+    }
+
+    button {
+        font-size: 1.5rem;
+    }
+    .buttons{
+        height: 65vh;
+    }
+    .operator{
+        font-size: 2.5rem;
+    }
+}
+
+/* ----------media queries for laptop------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        height: 2.4rem;
+    }
+
+    input {
+        height: 11rem;
+    }
+    button{
+        font-size: 1.8rem;
+    }
+    .buttons{
+        height: 67vh;
+    }
+    .operator{
+        font-size: 2rem;
+    }
+}
+/* ----------media queries for laptop L------- */
+@media screen and (min-width: 1025px) and (max-width: 1439px){
+    nav {
+        height: 4rem;
+    }
+
+    input {
+        height: 12rem;
+    }
+
+    .buttons{
+        height: 65vh;
+    }
+
+    button{
+        font-size: 2rem;
+    }
+    .operator{
+        font-size: 2rem;
+    }
+}
+/* ----------media queries for laptop L------- */
+@media screen and (min-width: 1440px) and (max-width: 1500px){
+    nav {
+        height: 4rem;
+    }
+
+    input {
+        height: 13rem;
+    }
+
+    .buttons{
+        height: 62.5vh;
+    }
+
+    button{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 2560px) {
+    nav{
+        height: 10rem;
+    }
+    h1{
+        font-size: 5rem;
+        padding-top: 2rem;
+    }
+    input {
+        height: 15rem;
+        font-size: 10rem;
+    }
+    .buttons{
+        height: 68rem;
+    }
+    button{
+        font-size: 4rem;
+    }
+}
